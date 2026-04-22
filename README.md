@@ -4,7 +4,7 @@
 
 **Day 23 / 30 - April Vibe Coding Challenge**
 
-## 🔗 [Live Demo](https://AquaFlow-Water-Game.vercel.app/)
+## 🔗 [Live Demo](https://aqua-flow-water-game.vercel.app/)
 
 **AquaFlow** is a premium HTML5 Canvas fluid simulation puzzle. The player is tasked with dropping precisely 100 liters (100 particles) of liquid through a mathematically robust physics environment filled with deflection lines, funnels, and gravity. 
 
