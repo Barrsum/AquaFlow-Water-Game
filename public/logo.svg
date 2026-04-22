@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="90 90 320 320" width="100%" height="100%">
+  <defs>
+    <!-- Strict perfect circle clipping to keep all craters inside -->
+    <clipPath id="moonClip1">
+      <circle cx="250" cy="250" r="160" />
+    </clipPath>
+
+    <!-- Smooth 3D Cartoony Base Gradient -->
+    <radialGradient id="moonBase1" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="45%" stop-color="#d4e1f9" />
+      <stop offset="80%" stop-color="#93a8cf" />
+      <stop offset="100%" stop-color="#5a6f96" />
+    </radialGradient>
+
+    <!-- Cartoony Indented Crater Definition -->
+    <g id="crater-blue">
+      <circle cx="0" cy="0" r="10" fill="#000000" opacity="0.15" />
+      <circle cx="1.5" cy="1.5" r="9" fill="#ffffff" opacity="0.3" />
+      <circle cx="1.5" cy="1.5" r="9" fill="#000000" opacity="0.05" />
+    </g>
+  </defs>
+
+  <!-- The Complete Perfect Moon -->
+  <g clip-path="url(#moonClip1)">
+    <!-- Main Sphere -->
+    <circle cx="250" cy="250" r="160" fill="url(#moonBase1)" />
+    
+    <!-- Craters -->
+    <use href="#crater-blue" x="180" y="190" transform="translate(180,190) scale(2.5) translate(-180,-190)" />
+    <use href="#crater-blue" x="290" y="160" transform="translate(290,160) scale(1.6) translate(-290,-160)" />
+    <use href="#crater-blue" x="320" y="240" transform="translate(320,240) scale(2) translate(-320,-240)" />
+    <use href="#crater-blue" x="190" y="280" transform="translate(190,280) scale(3.2) translate(-190,-280)" />
+    <use href="#crater-blue" x="260" y="340" transform="translate(260,340) scale(1.4) translate(-260,-340)" />
+    <use href="#crater-blue" x="340" y="320" transform="translate(340,320) scale(1.8) translate(-340,-320)" />
+    <use href="#crater-blue" x="135" y="240" transform="translate(135,240) scale(0.9) translate(-135,-240)" />
+    <use href="#crater-blue" x="250" y="230" transform="translate(250,230) scale(1.1) translate(-250,-230)" />
+  </g>
+</svg>
